@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
+$border_line_color: rgb(213, 171, 215);
+
 body {
     font-family: 'Inconsolata', monospace;
 }
@@ -14,7 +16,8 @@ a {
     margin: 0 auto;
 }
 .header {
-    margin: 0 auto;
+    margin: 20px auto;
+    border-bottom: 1px solid $border_line_color;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -22,7 +25,10 @@ a {
     }
     &__logo {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: 700;
+    }
+    &__icon {
+        width: 2.5rem;
     }
 
     .navbar {
