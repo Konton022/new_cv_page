@@ -21,6 +21,13 @@ a {
     max-width: 1000px;
     margin: 0 auto;
 }
+.section {
+    // max-width: 90%;
+    padding: 10px;
+    box-shadow: 0 0 5px $main_bg_color;
+    border-radius: $main_border_radius;
+    margin: 10px 0;
+}
 .header {
     margin: 20px auto;
     border-bottom: 1px solid $main_bg_color;
@@ -28,6 +35,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 1rem;
     }
     &__logo {
         font-size: $h1_size;
@@ -54,6 +62,49 @@ a {
                 color: whitesmoke;
                 background-color: lighten($main_bg_color, 5%);
                 box-shadow: 0 0 5px $main_bg_color;
+            }
+        }
+    }
+}
+.home {
+    display: flex;
+    &__photo {
+        max-width: 40%;
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: $main_border_radius;
+        box-shadow: 0 0 5px $main_bg_color;
+    }
+    &__text {
+        margin-left: 10px;
+    }
+    &__title {
+        font-size: $h2_size;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    &__subtitle {
+        display: inline-block;
+        padding: 0.2rem 1rem;
+        font-size: $h2_size;
+        color: whitesmoke;
+        text-transform: uppercase;
+        background-color: $main_bg_color;
+    }
+    &__description {
+        h3 {
+            font-size: $h2_size;
+        }
+        ul {
+            list-style-type: square;
+        }
+        li {
+            span {
+                background-color: $main_bg_color;
+                padding: 0 0.2rem;
+                color: whitesmoke;
             }
         }
     }
