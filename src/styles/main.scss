@@ -2,7 +2,7 @@
 
 // $border_line_color: rgb(213, 171, 215);
 // $bg_hover_color: rgb(203, 191, 214);
-$main_bg_color: rgb(202, 155, 247);
+$main_bg_color: rgb(148, 111, 185);
 $default_bg_color: rgb(45, 43, 43);
 $h1_size: 2rem;
 $h2_size: 1.5rem;
@@ -25,7 +25,7 @@ a {
 .section {
     // max-width: 90%;
     padding: 1rem;
-    box-shadow: 0 0 5px $main_bg_color;
+    box-shadow: 0 0 1rem lighten($main_bg_color, 10%);
     border-radius: $main_border_radius;
     margin: 2rem 0;
 }
@@ -125,11 +125,28 @@ a {
         padding: 1rem 0;
     }
     &__wrapper {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     &__item {
-        display: inline-block;
-        width: 80px;
-        height: 100px;
+        // width: 150px;
+
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 120px;
+        height: fit-content;
+    }
+    &__img {
+        width: 100px;
+        align-self: center;
+    }
+    &__describ {
+        font-size: $h3_size;
+        text-align: center;
+        text-transform: lowercase;
+        margin: 1rem 0;
     }
 }
