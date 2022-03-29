@@ -150,3 +150,27 @@ a {
         margin: 1rem 0;
     }
 }
+.certif {
+    &__header {
+        font-size: $h2_size;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1rem 0;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &__photo {
+        width: 45%;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+        box-sizing: border-box;
+        border-radius: $main_border_radius;
+        filter: grayscale(40%);
+    }
+}
