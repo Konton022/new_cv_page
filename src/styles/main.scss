@@ -1,21 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 // $border_line_color: rgb(213, 171, 215);
 // $bg_hover_color: rgb(203, 191, 214);
 $main_bg_color: rgb(148, 111, 185);
-$default_bg_color: rgb(45, 43, 43);
-$h1_size: 2rem;
-$h2_size: 1.5rem;
-$h3_size: 1.3rem;
+$default_bg_color: rgb(121, 121, 121);
+$h1_size: 1.8rem;
+$h2_size: 1.3rem;
+$h3_size: 1.1rem;
 $main_border_radius: 5px;
 
 body {
-    font-family: 'Inconsolata', monospace;
+    // font-family: 'Inconsolata', monospace;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
     outline: none;
     text-decoration: none;
+}
+
+ul{
+    list-style-type: square;
+    li {
+        line-height: 1.5rem;
+    }
 }
 
 .container {
@@ -105,7 +114,7 @@ a {
         }
         ul {
             list-style-type: square;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         li {
             span {
@@ -169,8 +178,18 @@ a {
         width: 100%;
         object-fit: cover;
         object-position: left;
+        box-shadow: 0 0 5px $default_bg_color;
         box-sizing: border-box;
         border-radius: $main_border_radius;
         filter: grayscale(40%);
+    }
+    &__wrapper {
+        margin-left: 1rem;
+    }
+    &__title {
+        font-size: $h3_size;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding-bottom: 1rem;
     }
 }
