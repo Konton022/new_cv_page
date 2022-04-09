@@ -1,8 +1,5 @@
-// @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-// $border_line_color: rgb(213, 171, 215);
-// $bg_hover_color: rgb(203, 191, 214);
 $main_bg_color: rgb(159, 113, 204);
 $default_bg_color: rgb(121, 121, 121);
 $h1_size: 1.8rem;
@@ -11,8 +8,9 @@ $h3_size: 1.1rem;
 $main_border_radius: 5px;
 
 body {
-    // font-family: 'Inconsolata', monospace;
     font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a { 
@@ -35,10 +33,11 @@ ul{
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    min-width: 400px;
 }
 .section {
     // max-width: 90%;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 0 0 1rem lighten($main_bg_color, 10%);
     border-radius: $main_border_radius;
     margin: 2rem 0;
@@ -154,7 +153,9 @@ ul{
         height: fit-content;
     }
     &__img {
+        height: 120px;
         width: 100px;
+        object-fit: contain;
         align-self: center;
     }
     &__describ {
@@ -189,7 +190,7 @@ ul{
         filter: grayscale(40%);
     }
     &__wrapper {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
     &__title {
         font-size: $h3_size;
@@ -199,7 +200,9 @@ ul{
     }
 }
 .projects {
-
+    &__wrapper{
+        padding: 0 1rem;
+    }
     &__header {
         font-size: $h2_size;
         font-weight: 700;
@@ -210,5 +213,26 @@ ul{
         font-size: $h3_size;
         text-transform: capitalize;
         font-weight: 700;
+    }
+}
+
+.contacts{
+    &__header{
+        font-size: $h2_size;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    &__wrapper{
+        padding: 0 1rem;
+    }
+}
+
+.footer{
+    &__wrapper{
+        text-align: center;
+        padding: 2rem;
+        border-top: 1px solid $main_bg_color;
+
     }
 }
