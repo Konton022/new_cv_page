@@ -234,7 +234,8 @@ ul{
     }
 }
 
-@media (max-width: 550px) {
+
+@media screen, (max-width: 550px) {
     $size_index: 0.7;
 
     ul {
