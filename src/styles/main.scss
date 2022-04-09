@@ -235,15 +235,15 @@ ul{
 }
 
 
-@media screen, (max-width: 550px) {
+@media (max-width: 550px) {
     $size_index: 0.7;
 
     ul {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
         font-size: 1rem * $size_index;
     
         li {
-            line-height: 1.1rem;
+            line-height: 1rem;
         }
     }
     .container {
@@ -291,6 +291,12 @@ ul{
         &__description {
             h3 {
                 font-size: $h2_size * $size_index;
+            }
+            ul{
+                font-size: 0.9rem;
+                li{
+                    line-height: 1.3rem;
+                }
             }
         }
     }
@@ -368,6 +374,7 @@ ul{
     }
     
     .contacts {
+        padding-bottom: 1rem;
         &__header {
             font-size: $h2_size;
             font-weight: 700;
@@ -382,8 +389,9 @@ ul{
     
     .footer {
         &__wrapper {
+            font-size: 0.8rem;
             text-align: center;
-            padding: 2rem;
+            padding: 1rem;
             border-top: 1px solid $main_bg_color;
     
         }
