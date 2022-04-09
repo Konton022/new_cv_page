@@ -33,7 +33,7 @@ ul{
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    min-width: 400px;
+
 }
 .section {
     // max-width: 90%;
@@ -129,7 +129,6 @@ ul{
         }
     }
 }
-
 .skills {
     &__title {
         font-size: $h2_size;
@@ -215,7 +214,6 @@ ul{
         font-weight: 700;
     }
 }
-
 .contacts{
     &__header{
         font-size: $h2_size;
@@ -227,7 +225,6 @@ ul{
         padding: 0 1rem;
     }
 }
-
 .footer{
     &__wrapper{
         text-align: center;
@@ -235,4 +232,160 @@ ul{
         border-top: 1px solid $main_bg_color;
 
     }
+}
+
+@media (max-width: 550px) {
+    $size_index: 0.7;
+
+    ul {
+        padding-left: 1rem;
+        font-size: 1rem * $size_index;
+    
+        li {
+            line-height: 1.1rem;
+        }
+    }
+    .container {
+        width: 100vw;
+    } 
+    .section{
+        margin: 1rem 0.5rem;
+        padding: 0.5rem;
+    }   
+    .header{
+        &__wrapper {
+            padding: 0 0.5rem;
+        }
+        &__logo {
+            font-size:$h1_size*$size_index
+        }
+        &__icon {
+            width: 2.5rem * $size_index;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem 0;
+        
+            &__link {
+                margin: 0;
+                font-size: $h3_size * $size_index;
+            }
+        }
+    }
+    .home {
+        flex-direction: column;
+        &__photo {
+            max-width: 100%;
+        }
+        &__text {
+            margin: 1rem 0;
+        }
+        &__title {
+            font-size: $h2_size * $size_index;
+        }
+        &__subtitle {
+            font-size: $h2_size * $size_index;
+        }
+        &__description {
+            h3 {
+                font-size: $h2_size * $size_index;
+            }
+        }
+    }
+    .skills {
+        &__title {
+            font-size: $h2_size * $size_index;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        &__item {
+            min-width: 120px * $size_index;
+        }
+    
+        &__img {
+            height: 120px * $size_index;
+            width: 100px * $size_index;
+        }
+    
+        &__describ {
+            font-size: $h3_size * $size_index;
+            margin: 0.5rem 0;
+        }
+    }
+    
+    .certif {
+        &__header {
+            font-size: $h2_size * $size_index;
+            padding: 0.5rem 0;
+        }
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+    
+        &__photo {
+            max-width: 100%;
+        }
+    
+        &__img {
+        }
+    
+        &__wrapper {
+            margin-left: 1rem;
+        }
+    
+        &__title {
+            font-size: $h3_size;
+            font-weight: 700;
+            text-transform: capitalize;
+            padding: 0.5rem;
+        }
+    }
+    
+    .projects {
+        &__wrapper {
+            padding: 0 1rem;
+        }
+    
+        &__header {
+            font-size: $h2_size;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    
+        &__title {
+            font-size: $h3_size;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+    
+    .contacts {
+        &__header {
+            font-size: $h2_size;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    
+        &__wrapper {
+            padding: 0 1rem;
+        }
+    }
+    
+    .footer {
+        &__wrapper {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid $main_bg_color;
+    
+        }
+    }
+    
 }
