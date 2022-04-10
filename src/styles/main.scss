@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-$main_bg_color: rgb(159, 113, 204);
+$main_bg_color: rgb(151, 119, 210);
 $default_bg_color: rgb(121, 121, 121);
 $h1_size: 1.8rem;
 $h2_size: 1.4rem;
@@ -23,7 +23,7 @@ a:visited {
 }
 
 ul{
-    list-style-type: square;
+    list-style-type: none;
 
     li {
         line-height: 1.5rem;
@@ -241,6 +241,7 @@ ul{
     ul {
         padding-left: 1.5rem;
         font-size: 1rem * $size_index;
+        list-style-type: none;
     
         li {
             line-height: 1rem;
@@ -254,6 +255,7 @@ ul{
         padding: 0.5rem;
     }   
     .header{
+        margin: 1rem 0;
         &__wrapper {
             padding: 0 0.5rem;
         }
