@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CspHtmlWebpackPlugin = require('csp-html-webpack-plugin');
 
 const devServer = (isDev) =>
     !isDev
@@ -29,23 +28,6 @@ module.exports = ({ develop }) => ({
         new MiniCssExtractPlugin({
             filename: './styles/main.css',
         }),
-        // new CspHtmlWebpackPlugin({
-        //     'object-src': "'none'",
-        //     'base-uri': "'self'",
-        //     'script-src': [
-        //         "'unsafe-inline'",
-        //         "'self'",
-        //         "'unsafe-eval'",
-        //         "'http://mc.yandex.ru'",
-        //     ],
-        //     'worker-src': ["'self'", 'blob:'],
-        //     // 'base-uri': "'self'",
-        //     // 'object-src': "'none'",
-        //     // 'default-src': "'self'",
-        //     // 'script-src-elem': "'self'",
-        //     // 'script-src': ["'unsafe-inline'", "'self'", "'unsafe-eval'"],
-        //     // 'style-src': ["'unsafe-inline'", "'self'", "'unsafe-eval'"],
-        // }),
     ],
     module: {
         rules: [
