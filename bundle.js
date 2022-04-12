@@ -1,0 +1,1 @@
+(()=>{"use strict";var e,t,a,c,n;e=window,t=document,a="script",e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,c=t.createElement(a),n=t.getElementsByTagName(a)[0],c.async=1,c.src="https://mc.yandex.ru/metrika/tag.js",n.parentNode.insertBefore(c,n),ym(88253339,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0})})();
